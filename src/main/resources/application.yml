@@ -1,0 +1,13 @@
+spring:
+  # Default Spring datasource configuration.
+  # These values will be set by entrypoint.sh as env variables for
+  # assigning the target DB endpoint information. Developers can
+  # also override these values in application-default.yml
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localdocker:3306/learn
+    username: mysql
+    password: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
